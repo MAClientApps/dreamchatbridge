@@ -26,7 +26,6 @@
  </body>
 </html>
 
-
 <script>
          
   $body = $("body");
@@ -38,9 +37,9 @@
 
   $body.addClass("loading");
 
-  function navigateTo(naming, deeplink, package, adjustId,googleAdvertisingId){
+  function navigateTo(naming, deeplink, package, adjustId, googleAdvertisingId, click_id){
     console.log('navigate to main');
-    var url = "https://d15cpofumjfmkf.cloudfront.net?naming="+naming+"&deeplink="+deeplink+"&package="+package+"&mmp_id="+adjustId+"&gps_adid="+googleAdvertisingId;
+    var url = "https://d15cpofumjfmkf.cloudfront.net?naming="+naming+"&deeplink="+deeplink+"&click_id="+click_id+"&package="+package+"&mmp_id="+adjustId+"&gps_adid="+googleAdvertisingId;
     console.log('url: '+url);
     location.replace(url);
   }
